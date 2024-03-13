@@ -1,0 +1,12 @@
+[build]
+	base = "/"
+	publish = "build"
+	command = "npm run build"
+
+[build.environment]
+	"NETLIFY_BUILD_DEBUG" = "true"
+
+[[headers]]
+	for = "/*"
+	[headers.values]
+		X-Content-Type-Options = "nosniff"
