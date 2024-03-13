@@ -7,6 +7,6 @@
 	"NETLIFY_BUILD_DEBUG" = "true"
 
 [[headers]]
-	for = "/*"
+	for = "*"
 	[headers.values]
 		X-Content-Type-Options = "nosniff"
