@@ -14,9 +14,9 @@ export const handle = async ({ event, resolve }) =>
 	// Handle response resolve
 	let response = await resolve( event );
 
-	Object.entries(securityHeaders).forEach(
-		([header, value]) => response.headers.set(header, value)
-	);
+	// Object.entries(securityHeaders).forEach(
+	// 	([header, value]) => response.headers.set(header, value)
+	// );
 
 	return response;
 }
